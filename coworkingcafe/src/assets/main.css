@@ -1,35 +1,96 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: -10px;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  top: 0;
+  z-index: 1000;
+  font-family: 'Heebo';
+  box-sizing: border-box;
 }
 
-a,
-.green {
+.logo_navbar {
+  height: 40px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between; /* Jævn fordeling af menu elementer */
+  flex-grow: 1;
+  list-style: none;
+}
+
+.navbar-menu li {
+  margin: 0 1rem;
+}
+
+.navbar-menu a {
+  color: white;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  font-weight: bold;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.navbar-menu a:hover {
+  color: #E9C46A;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.hero-banner {
+  /*position: relative;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Sikrer at billedet dækker hele containeren */
+  z-index: -1; /* Placer billedet bagved indholdet */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-logo {
+  min-width: 500%;
+  max-width: 800%;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.booknu-button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #E87052;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.booknu-button:hover {
+  background-color: white;
+  color: #E87052;
+  border: solid #E87052;
 }

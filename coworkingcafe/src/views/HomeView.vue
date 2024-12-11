@@ -1,9 +1,13 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Navbar from '@/components/Navbar.vue';
+import Landingpage from '@/components/Landingpage.vue';
 </script>
 
 <template>
+  <header>
+    <Navbar />
+  </header>
   <main>
-    <TheWelcome />
+    <Landingpage />
   </main>
 </template>
