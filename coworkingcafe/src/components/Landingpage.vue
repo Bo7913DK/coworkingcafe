@@ -40,15 +40,35 @@
   <h2 class="priser-h2">Priser</h2>
   <div class="price-wrap">
     <div class="price-box">
-      <h3 class="dag-h3">Halv dag (4 timer)</h3>
+      <p class="dag-p">Halv dag (4 timer)</p>
       <p class="price">4500 kr.</p>
     </div>
     <div class="price-box">
-      <h3 class="dag-h3">Hel dag</h3>
+      <p class="dag-p">Hel dag</p>
       <p class="price">7500 kr.</p>
     </div>
   </div>
   <button class="semere-button">SE MERE</button>
+    </section>
+
+  <section class="review-section">
+  <h3 class="review-h3">Se hvad vores kunder synes</h3>
+  <div class="review-wrap">
+    <button class="review-button"><</button>
+    <div class="review-box">
+      <p class="review-text">“Jeg holdt min 40-års fødselsdag i Coworking Café, og det var en fantastisk oplevelse. Central beliggenhed og ingen naboer betød, at vi kunne feste hele natten uden problemer. Kan varmt anbefales!"</p>
+      <p class="reviewer-author">- Jens R.</p>
+    </div>
+    <div class="review-box">
+      <p class="review-text">"Coworking Café er den perfekte ramme for både professionelle møder og sociale events. Lokalet har en moderne og indbydende atmosfære, og faciliteterne lever fuldt op til forventningerne. Personalet er hjælpsomme og professionelle, hvilket gjorde vores arrangement til en succes. Jeg kan varmt anbefale dette sted til enhver, der søger et fleksibelt og inspirerende lokale."</p>
+      <p class="reviewer-author">- Jan L.</p>
+    </div>
+    <div class="review-box">
+      <p class="review-text">“Vi holdt et firmamøde på Coworking Café, og det var helt perfekt! Lokalet var professionelt og komfortabelt, og faciliteterne var ideelle til vores præsentationer. Vi følte os virkelig velkomne. Absolut et sted, vi vil bruge igen! Vi valgte forplejning og det var bare i top!”</p>
+      <p class="reviewer-author">- Jon P.</p>
+    </div>
+    <button class="review-button">></button>
+  </div>
     </section>
   </div>
 

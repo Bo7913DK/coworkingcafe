@@ -11,7 +11,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   margin: -10px;
   /*background: rgba(0, 0, 0, 0.5);*/
   top: 0;
@@ -33,7 +33,7 @@ html, body {
 }
 
 .navbar-menu li {
-  margin: 0 1rem;
+  margin: 0 16px;
 }
 
 .navbar-button {
@@ -80,13 +80,13 @@ html, body {
 .hero-logo {
   min-width: 500%;
   max-width: 500%;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   transition: none;
 }
 
 .booknu-button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+  margin-top: 16px;
+  padding: 16px 32px;
   background-color: #E87052;
   color: white;
   border: solid #E87052;
@@ -110,7 +110,7 @@ html, body {
   align-items: center;
   background-color: #053835;
   color: white;
-  padding: 2rem 0;
+  padding: 32px 0;
   position: relative;
   margin-left: -15px;
   margin-right: -10px;
@@ -125,13 +125,16 @@ html, body {
 .info-icon {
   width: 40px;
   height: 40px;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 
 .info-text {
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
+.hvad-er-cwc {
+  background-color: #F6F6F6;
+}
 
 .showcase-flex-reverse {
   display: flex;
@@ -178,6 +181,7 @@ html, body {
   text-align: left;
   margin-left: 70px;
   margin-top: 30px;
+  margin-bottom: 70px;
   font-weight: 400;
 }
 
@@ -201,20 +205,21 @@ html, body {
   justify-content: center;
 }
 
-.dag-h3 {
+.dag-p {
   font-size: 22px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
 .price {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
 }
 
 .semere-button {
-  margin-top: 1rem;
-  padding: 1rem 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 16px 32px;
   background-color: #E87052;
   color: white;
   border: solid #E87052;
@@ -231,3 +236,99 @@ html, body {
   transform: none;
   cursor: not-allowed;
 }
+
+
+
+
+
+.review-section {
+  background-color: #F6F6F6;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.review-h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #232929;
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
+
+.review-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+
+.review-box {
+  background-color: #fff;
+  color: #004d45;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-author {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.dag-p {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.review-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.review-button {
+  height: 80px;
+  width: 80px;
+  background-color: #A0A0A0;
+  color: white;
+  border: solid #FFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  line-height: 0px;
+}
+
+.review-button:hover {
+  height: 80px;
+  width: 80px;
+  background-color: #1A6863;
+  color: white;
+  border: solid #FFFF;
+  border-width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  line-height: 0px;
+  cursor: not-allowed;
+}
+
+
