@@ -1,12 +1,12 @@
 <template>
   <nav class="navbar">
-    <img src="@/img/CwcHvidLogo.svg" class="logo_navbar">
+    <img src="@/img/cwchvidlogo.svg" class="logo_navbar">
     <ul class="navbar-menu">
-      <li><a href="#">Forside</a></li>
-      <li><a href="#">Praktisk information</a></li>
-      <li><a href="#">Caféen & Priser</a></li>
-      <li><a href="#">Mødelokaler</a></li>
-      <li><a href="#">Datoer & Booking</a></li>
+      <li><a href="#" class="navbar-button">Forside</a></li>
+      <li><a href="#" class="navbar-button">Praktisk information</a></li>
+      <li><a href="#" class="navbar-button">Caféen & Priser</a></li>
+      <li><a href="#" class="navbar-button">Mødelokaler</a></li>
+      <li><a href="#" class="navbar-button">Datoer & Booking</a></li>
     </ul>
   </nav>
 </template>
