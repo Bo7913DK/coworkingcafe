@@ -4,7 +4,7 @@
 <template>
   <div class="full-page">
     <section class="hero-banner">
-      <img src="@/img/herobanner.png" alt="Hero Image" class="hero-image">
+      <img src="@/img/herobanner.png" alt="Hero-banner af Coworking Café" class="hero-image">
       <div class="hero-content">
         <img src="@/img/cwchvidlogotekst.svg" alt="Coworking Cafe Logo" class="hero-logo">
         <button class="booknu-button">BOOK NU</button>
@@ -36,6 +36,7 @@
           </div>
       </div>
     </section>
+
     <section class="priser-section">
   <h2 class="priser-h2">Priser</h2>
   <div class="price-wrap">
@@ -69,6 +70,57 @@
     </div>
     <button class="review-button">></button>
   </div>
+    </section>
+
+    <section class="eventtype-section">
+  <h4 class="eventtype-h4">Coworking Café passer perfekt til</h4>
+  <div class="eventtype-wrap">
+    <div class="eventtype-box">
+      <p class="eventtype-headline">Privatarrangementer</p>
+      <p class="eventtype-text">Vores selskabslokale er det perfekte sted at holde det næste firma arrangement - hvad end det er julefrokost eller et større event. Der er nemlig plads til alle medarbejderne, og AV-udstyr kan tilkøbes så præsentationer kan ses på lærreder.</p>
+      <div class="eventtype-image-container">
+      <img src="@/img/privatarrangementlandingpage.webp" class="eventtype-image" alt="Billede af Coworking Cafés tomme lokale">
+      <div class="eventtype-mereinfo">Læs mere</div>
+      </div>
+    </div>
+    <div class="eventtype-box">
+      <p class="eventtype-headline">Firmafester</p>
+      <p class="eventtype-text">Om det er fødselsdag, konfirmation, eller noget helt tredje, tilbyder vi et rummeligt selskabslokale med plads til 80 mennesker lige i hjertet af Odense. Med muligheden for tilkøb af forplejning gør vi det nemt for dig så du kun skal tænke på at hygge dig. </p>
+      <div class="eventtype-image-container">
+      <img src="@/img/firmafestlandingpage.webp" class="eventtype-image" alt="Billede af Coworking Cafés oppyntet lokale med gæster og tag-selv bord">
+      <div class="eventtype-mereinfo">Læs mere</div>
+    </div>
+    </div>
+    <div class="eventtype-box">
+      <p class="eventtype-headline">Kurser og møder</p>
+      <p class="eventtype-text">Skal du holde et kursus eller et mindre møde, kan vi tilbyde lokaler med Wi-Fi og TV-skærm, så alle kan følge med i dagsordenen. <br><br>Det er også muligt at tilkøbe forplejning.</p>
+      <div class="eventtype-image-container">
+        <img src="@/img/kurserlandingpage.webp" class="eventtype-image" alt="Billede af Coworking Cafés store mødelokale med deltagere">
+        <div class="eventtype-mereinfo">Læs mere</div>
+        </div>
+    </div>
+  </div>
+    </section>
+
+    <section class="hvorfor-cwc">
+      <div class="showcase-flex-reverse">
+          <img src="@/img/coworkingcafeinterior.webp" class="interiormap" alt="Billede af Coworking Cafés bordpynt med gæster">
+          <div class="showcase-text-wrap-hvorfor">
+            <p class="hvorfor-minioverskrift">Hvor, hvor mange og hvorfor?</p>
+            <h5 class="hvorfor-h5">Hvad er Coworking Cafe?</h5>
+            <div class="showcase-text-left-hvorfor">
+            <ul>
+              <li class="hvorfor-liste">Ligger centralt i Odense - kun 10 minutter fra Banegården.</li>
+              <li class="hvorfor-liste">Der er ingen naboer, så festen kan fortsætte i lang tid uden klager.</li>
+              <li class="hvorfor-liste">Plads til 80 siddende og 120 stående gæster i vores 134m2 store lokale.</li>
+              <li class="hvorfor-liste">Mulighed for tilkøb af forplejning, så du ikke skal tænke på servicen.</li>
+              <li class="hvorfor-liste">Mulighed for at tilkøbe AV-udstyr, så deltagerne får det hele med.</li>
+              <li class="hvorfor-liste">Lokalet egner sig både til privatarrangementer, firmafester og kurser.</li>
+              <li class="hvorfor-liste">Priser fra 4500 kr.-</li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </section>
   </div>
 

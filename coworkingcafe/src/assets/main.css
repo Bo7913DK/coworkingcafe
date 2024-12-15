@@ -7,6 +7,7 @@ html, body {
     font-family: "heebo";
 }
 
+/*Navbar:*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,7 @@ html, body {
   color: #E9C46A;
 }
 
-
+/*Hero-banner:*/
 
 .hero-banner {
   position: relative;
@@ -103,6 +104,8 @@ html, body {
   transform: none;
 }
 
+/*Green info-box:*/
+
 .info-box {
   position: relative;
   display: flex;
@@ -131,6 +134,8 @@ html, body {
 .info-text {
   font-size: 20px;
 }
+
+/* Hvad-er-CWC section:*/
 
 .hvad-er-cwc {
   background-color: #F6F6F6;
@@ -166,6 +171,8 @@ html, body {
   flex-direction: column;
   justify-content: center;*/
 }
+
+/*Prices section: */
 
 .priser-section {
   background-color: #053835;
@@ -237,9 +244,7 @@ html, body {
   cursor: not-allowed;
 }
 
-
-
-
+/*Review-section:*/
 
 .review-section {
   background-color: #F6F6F6;
@@ -277,6 +282,7 @@ html, body {
   height:auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .reviewer-author {
@@ -284,15 +290,11 @@ html, body {
   font-weight: 500;
 }
 
-.dag-p {
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
 .review-text {
   font-size: 16px;
   font-weight: 300;
+  text-align: left;
+  color: #000000;
 }
 
 .review-button {
@@ -331,4 +333,139 @@ html, body {
   cursor: not-allowed;
 }
 
+/* Event-type section: */
 
+.eventtype-section {
+  background-color: #053835;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.eventtype-h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #E9C46A;
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
+
+.eventtype-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.eventtype-box {
+  background-color: #fff;
+  color: #004d45;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  width: 300px;
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.eventtype-headline {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.eventtype-text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.eventtype-image-container {
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+}
+
+.eventtype-box:hover .eventtype-image {
+  opacity: 0.8;
+}
+
+.eventtype-box:hover .eventtype-mereinfo {
+  opacity: 1;
+}
+
+
+.eventtype-image {
+  display: block;
+  width: calc(100% + 40px);
+  width: 100%;
+  margin: 0px;
+}
+
+
+.eventtype-mereinfo {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: #004d45;
+    color: #fff;
+    padding: 10px 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: not-allowed;
+}
+
+/* Hvorfor CWC: */
+
+.hvorfor-cwc {
+  background-color: #F6F6F6;
+  min-height: 500px;
+}
+
+
+.interiormap {
+  width: 700px;
+  margin: 50px 50px 50px 100px;
+}
+
+.showcase-text-wrap-hvorfor {
+  margin-top: 30px;
+  margin-left: 70px;
+  flex: 1;
+}
+
+.hvorfor-minioverskrift {
+  margin-top: 30px;
+  margin-bottom: -70px;
+}
+
+.hvorfor-h5 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.showcase-text-left-hvorfor {
+  font-size: 16px;
+  word-wrap: break-word;
+  width: 600px;
+  text-align: justify;
+}
+
+.hvorfor-liste {
+  margin-bottom: 20px;
+}
