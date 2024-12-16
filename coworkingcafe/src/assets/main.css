@@ -471,6 +471,49 @@ html, body {
   margin-bottom: 20px;
 }
 
+/*FAQ:*/
+
+.faq {
+  background-color: #053835;
+}
+
+.faq-text-wrap {
+  margin: 30px 0 70px 70px;
+  flex: 1;
+}
+
+.faq-h6 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #E9C46A;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
+
+.faq-liste-parent {
+  list-style-type: none;
+}
+
+.faq-liste {
+  margin-bottom: 20px;
+  color: #F6F6F6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.faq-liste::before {
+  content: '➔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #F6F6F6;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /*Footer:*/
 
 .footer {

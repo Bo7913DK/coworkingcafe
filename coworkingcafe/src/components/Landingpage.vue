@@ -1,7 +1,14 @@
 <script setup>
+import Navbar from '@/components/Navbar.vue';
+import TheFooter from '@/components/TheFooter.vue';
 </script>
 
 <template>
+
+  <header>
+    <Navbar />
+  </header>
+
   <div class="full-page">
     <section class="hero-banner">
       <img src="@/img/herobanner.webp" alt="Hero-banner af Coworking Café" class="hero-image">
@@ -25,6 +32,7 @@
         <div class="info-text">80 Siddepladser</div>
       </div>
     </section>
+
     <section class="hvad-er-cwc">
       <div class="showcase-flex-reverse">
           <img src="@/img/hvadercwc.webp" class="venuephoto-one" alt="Billede af Coworking Cafés bordpynt med gæster">
@@ -104,7 +112,7 @@
 
     <section class="hvorfor-cwc">
       <div class="showcase-flex-reverse">
-          <img src="@/img/coworkingcafeinterior.webp" class="interiormap" alt="Billede af Coworking Cafés bordpynt med gæster">
+          <img src="@/img/coworkingcafeinterior.webp" class="interiormap" alt="Kort over Coworking Cafés selskabslokale">
           <div class="showcase-text-wrap-hvorfor">
             <p class="hvorfor-minioverskrift">Hvor, hvor mange og hvorfor?</p>
             <h5 class="hvorfor-h5">Hvad er Coworking Cafe?</h5>
@@ -122,7 +130,31 @@
           </div>
       </div>
     </section>
+
+    <section class="faq">
+      <div class="showcase-flex-reverse">
+          <div class="faq-text-wrap">
+            <h6 class="faq-h6">FAQ</h6>
+            <div>
+            <ul class="faq-liste-parent">
+              <li class="faq-liste">Hvor ligger Coworking Café?</li>
+              <li class="faq-liste">Kan lokalet bruges som festlokale eller selskabslokale?</li>
+              <li class="faq-liste">Vi skal holde workshop. Kan vi bruge jer som konferencerum?</li>
+              <li class="faq-liste">Er der mulighed for catering til arrangementet?</li>
+              <li class="faq-liste">Hvad er kapaciteten for selskabslokalet?</li>
+              <li class="faq-liste">Er der teknisk udstyr tilgængelig i lokalet?</li>
+              <li class="faq-liste">Hvordan er parkeringsforholdene?</li>
+              <li class="faq-liste">Er der mulighed for at besøge selskabslokalet inden booking?</li>
+              <li class="faq-liste">Hvad er afbestillingspolitikken?</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
   </div>
 
-
+  <footer>
+    <TheFooter />
+  </footer>
+  
 </template>
