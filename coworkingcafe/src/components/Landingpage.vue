@@ -4,7 +4,7 @@
 <template>
   <div class="full-page">
     <section class="hero-banner">
-      <img src="@/img/herobanner.png" alt="Hero-banner af Coworking Café" class="hero-image">
+      <img src="@/img/herobanner.webp" alt="Hero-banner af Coworking Café" class="hero-image">
       <div class="hero-content">
         <img src="@/img/cwchvidlogotekst.svg" alt="Coworking Cafe Logo" class="hero-logo">
         <button class="booknu-button">BOOK NU</button>
@@ -13,15 +13,15 @@
     
     <section class="info-box">
       <div class="info-item">
-        <img src="@/img/prisikon.png" alt="Pris Ikon" class="info-icon">
+        <img src="@/img/prisikon.svg" alt="Pris Ikon" class="info-icon">
         <div class="info-text">Priser fra 4500 kr</div>
       </div>
       <div class="info-item">
-        <img src="@/img/lokationikon.png" alt="Lokations Ikon" class="info-icon">
+        <img src="@/img/lokationikon.svg" alt="Lokations Ikon" class="info-icon">
         <div class="info-text">Central beliggenhed, uden naboer</div>
       </div>
       <div class="info-item">
-        <img src="@/img/gaesterikon.png" alt="Antal Gæster Ikon" class="info-icon">
+        <img src="@/img/gaesterikon.svg" alt="Antal Gæster Ikon" class="info-icon">
         <div class="info-text">80 Siddepladser</div>
       </div>
     </section>
@@ -123,5 +123,6 @@
       </div>
     </section>
   </div>
+
 
 </template>
