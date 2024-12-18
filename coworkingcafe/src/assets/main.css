@@ -166,11 +166,23 @@ html, body {
 .showcase-text-left {
   font-size: 16px;
   word-wrap: break-word;
-  /*width: 300px;*/
   text-align: justify;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;*/
+}
+
+@media (max-width: 1226px) {
+  .showcase-flex-reverse {
+    flex-direction: column;
+  }
+
+  .venuephoto-one {
+    align-self: center;
+    width: auto;
+    max-width: 500px;
+  }
+
+  .showcase-text-wrap {
+    margin-right: 70px;
+  }
 }
 
 /*Prices section: */
@@ -301,6 +313,7 @@ html, body {
 .review-button {
   height: 80px;
   width: 80px;
+  min-width: 80px;
   background-color: #A0A0A0;
   color: white;
   border: solid #FFFF;
@@ -332,6 +345,17 @@ html, body {
   text-align: center;
   line-height: 0px;
   cursor: not-allowed;
+}
+
+@media (max-width: 1226px) {
+  .review-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-button {
+    display: none;
+  }
 }
 
 /* Event-type section: */
@@ -413,6 +437,7 @@ html, body {
   width: calc(100% + 40px);
   width: 100%;
   margin: 0px;
+  cursor: not-allowed;
 }
 
 
@@ -428,6 +453,13 @@ html, body {
     opacity: 0;
     transition: opacity 0.3s ease;
     cursor: not-allowed;
+}
+
+@media (max-width: 1180px) {
+  .eventtype-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Hvorfor CWC: */
@@ -471,6 +503,20 @@ html, body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1480px) {
+  .interiormap {
+    width: 500px;
+    height: auto;
+    margin: 50px 50px 50px 50px
+  }
+}
+
+@media (max-width: 1232px) {
+  .interiormap {
+    align-self: center;
+  }
+}
+
 /*FAQ:*/
 
 .faq {
@@ -495,6 +541,7 @@ html, body {
 
 .faq-liste-parent {
   list-style-type: none;
+  padding: 0;
 }
 
 .faq-liste {
@@ -502,6 +549,7 @@ html, body {
   color: #F6F6F6;
   position: relative;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .faq-liste::before {
@@ -512,6 +560,22 @@ html, body {
   color: #F6F6F6;
   font-size: 16px;
   line-height: 1.5;
+  transition: transform 0.3s ease;
+}
+
+.faq-liste.open::before {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #F6F6F6;
+}
+
+.faq-liste.open .faq-answer {
+  display: block;
 }
 
 /*Footer:*/

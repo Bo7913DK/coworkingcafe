@@ -1,14 +1,22 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
 import TheFooter from '@/components/TheFooter.vue';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-liste');
+
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('open');
+    });
+  });
+});
 </script>
 
 <template>
-
   <header>
     <Navbar />
   </header>
-
   <div class="full-page">
     <section class="hero-banner">
       <img src="@/img/herobanner.webp" alt="Hero-banner af Coworking Café" class="hero-image">
@@ -17,7 +25,6 @@ import TheFooter from '@/components/TheFooter.vue';
         <button class="booknu-button">BOOK NU</button>
       </div>
     </section>
-    
     <section class="info-box">
       <div class="info-item">
         <img src="@/img/prisikon.svg" alt="Pris Ikon" class="info-icon">
@@ -32,7 +39,6 @@ import TheFooter from '@/components/TheFooter.vue';
         <div class="info-text">80 Siddepladser</div>
       </div>
     </section>
-
     <section class="hvad-er-cwc">
       <div class="showcase-flex-reverse">
           <img src="@/img/hvadercwc.webp" class="venuephoto-one" alt="Billede af Coworking Cafés bordpynt med gæster">
@@ -44,7 +50,6 @@ import TheFooter from '@/components/TheFooter.vue';
           </div>
       </div>
     </section>
-
     <section class="priser-section">
   <h2 class="priser-h2">Priser</h2>
   <div class="price-wrap">
@@ -59,7 +64,6 @@ import TheFooter from '@/components/TheFooter.vue';
   </div>
   <button class="semere-button">SE MERE</button>
     </section>
-
   <section class="review-section">
   <h3 class="review-h3">Se hvad vores kunder synes</h3>
   <div class="review-wrap">
@@ -79,7 +83,6 @@ import TheFooter from '@/components/TheFooter.vue';
     <button class="review-button">></button>
   </div>
     </section>
-
     <section class="eventtype-section">
   <h4 class="eventtype-h4">Coworking Café passer perfekt til</h4>
   <div class="eventtype-wrap">
@@ -109,7 +112,6 @@ import TheFooter from '@/components/TheFooter.vue';
     </div>
   </div>
     </section>
-
     <section class="hvorfor-cwc">
       <div class="showcase-flex-reverse">
           <img src="@/img/coworkingcafeinterior.webp" class="interiormap" alt="Kort over Coworking Cafés selskabslokale">
@@ -130,31 +132,55 @@ import TheFooter from '@/components/TheFooter.vue';
           </div>
       </div>
     </section>
-
     <section class="faq">
       <div class="showcase-flex-reverse">
-          <div class="faq-text-wrap">
-            <h6 class="faq-h6">FAQ</h6>
-            <div>
-            <ul class="faq-liste-parent">
-              <li class="faq-liste">Hvor ligger Coworking Café?</li>
-              <li class="faq-liste">Kan lokalet bruges som festlokale eller selskabslokale?</li>
-              <li class="faq-liste">Vi skal holde workshop. Kan vi bruge jer som konferencerum?</li>
-              <li class="faq-liste">Er der mulighed for catering til arrangementet?</li>
-              <li class="faq-liste">Hvad er kapaciteten for selskabslokalet?</li>
-              <li class="faq-liste">Er der teknisk udstyr tilgængelig i lokalet?</li>
-              <li class="faq-liste">Hvordan er parkeringsforholdene?</li>
-              <li class="faq-liste">Er der mulighed for at besøge selskabslokalet inden booking?</li>
-              <li class="faq-liste">Hvad er afbestillingspolitikken?</li>
-              </ul>
-            </div>
-          </div>
+    <div class="faq-text-wrap">
+      <h6 class="faq-h6">FAQ</h6>
+      <div>
+        <ul class="faq-liste-parent">
+          <li class="faq-liste">
+            <span class="faq-question">Hvor ligger Coworking Café?</span>
+            <div class="faq-answer">Coworking Café ligger i hjertet af Odense, kun 10 minutter fra banegården, men uden naboer der kan klage over støj.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Kan lokalet bruges som festlokale eller selskabslokale?</span>
+            <div class="faq-answer">Lokalet kan bruges til både fester og selskaber.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Vi skal holde workshop. Kan vi bruge jer som konferencerum?</span>
+            <div class="faq-answer">Ja, vores lokaler er velegnede til workshops og konferencer.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Er der mulighed for catering til arrangementet?</span>
+            <div class="faq-answer">Ja, vi tilbyder catering til alle typer arrangementer. Du kan skrive til os for at høre nærmere om mulighed og pris.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Hvad er kapaciteten for selskabslokalet?</span>
+            <div class="faq-answer">Selskabslokalet kan rumme op til 80 siddende og 120 stående gæster.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Er der teknisk udstyr tilgængelig i lokalet?</span>
+            <div class="faq-answer">Ja, vi har AV-udstyr til rådighed som tilkøb. En projektor kan lejes for 200 kr.- og en Soundboks kan lejes for 500 kr.-</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Hvordan er parkeringsforholdene?</span>
+            <div class="faq-answer">Der er en stor parkeringsplads lige foran vores hoveddør. Derudover er der mange parkeringsmuligheder i nærområdet.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Er der mulighed for at besøge selskabslokalet inden booking?</span>
+            <div class="faq-answer">Ja, vi tilbyder rundvisninger efter aftale.</div>
+          </li>
+          <li class="faq-liste">
+            <span class="faq-question">Hvad er afbestillingspolitikken?</span>
+            <div class="faq-answer">Under 2 måneder før: 50% af prisen skal betales. Under 1 måned før: 100% af prisen skal betales. Dette inkludere også catering og andet tilkøb.</div>
+          </li>
+        </ul>
       </div>
+    </div>
+  </div>
     </section>
   </div>
-
   <footer>
     <TheFooter />
   </footer>
-  
 </template>
